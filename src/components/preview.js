@@ -8,7 +8,7 @@ const Preview = (props) => {
     }
 
     return (
-        <div dangerouslySetInnerHTML={getMarkdown()} />
+        <div id="preview" className="preview" dangerouslySetInnerHTML={getMarkdown()} />
     )
 }
 
