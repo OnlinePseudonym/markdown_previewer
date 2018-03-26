@@ -42,7 +42,7 @@ const blockedCode = () => {
 
     render() {
         return (
-            <div>
+            <div className="app-container">
                 <Editor handleChange={this.handleChange} input={this.state.input} />
                 <Preview input={this.state.input} />
             </div>

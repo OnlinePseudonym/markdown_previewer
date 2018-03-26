@@ -10,3 +10,32 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.app-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+  grid-gap: 2px;
+  background: #111;
+}
+
+.editor {
+  overflow: auto;
+  outline: none;
+  resize: none;
+  border: none;
+  padding: 1rem;
+}
+
+.preview {
+  background: #fff;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .app-container {
+    grid-auto-flow: column;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
