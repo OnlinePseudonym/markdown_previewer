@@ -11,6 +11,11 @@ body {
   font-family: sans-serif;
 }
 
+code {
+  background: #eaeaea;
+  padding: 2px;
+}
+
 .app-container {
   display: grid;
   grid-template-rows: 1fr 1fr;
